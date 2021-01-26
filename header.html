@@ -23,23 +23,27 @@
 
 <body class="color-2">
     <nav class="navbar navbar-expand-lg navbar-light bg-second w-100 justify-content-between">
-        <a class="navbar-brand" href="/"><img src="images/logo.png" alt="" class=" w-100"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+        <a class="navbar-brand" href="/"><img src="images/logo.png" alt="" class=" w-100"></a>
     
         <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-            <form class="form-inline my-3 my-lg-0 order-md-1" action="search.html">
+            <form class="form-inline my-3 my-lg-0 order-md-1 justify-content-between" action="search.html">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="video">
-                <button class="btn btn-outline-dark border-2 mt-3 my-md-0" type="submit">Search</button>
+                <button class="btn btn-outline-dark border-2 my-md-0" type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                        <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"/>
+                    </svg>
+                </button>
             </form>
 
-            <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+            <ul class="nav nav-tabs border-0 justify-content-between" id="myTab" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link rounded active" id="long-tab" data-toggle="tab" href="#long" role="tab" aria-controls="long" aria-selected="true">長片</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mx-3">
                     <a class="nav-link rounded" id="short-tab" data-toggle="tab" href="#short" role="tab" aria-controls="short" aria-selected="false">短片</a>
                 </li>
                 <li class="nav-item">

@@ -33,6 +33,10 @@ nav {
 }
 
 /* header */
+.ionicon {
+    width: 18px;
+    height: 18px;
+}
 .tab-content {
     position: absolute;
     background: #ccc;
@@ -50,7 +54,7 @@ nav {
 .nav-tabs .nav-link.active, 
 .nav-tabs .nav-item.show .nav-link {
     position: relative;
-    background-color: unset;
+    background-color: rgba(255, 255, 255, 0.3);
     border: unset;
 }
 .nav-tabs .nav-link.active:before, 
@@ -64,6 +68,10 @@ nav {
     border-style: solid;
     border-width: 0 10px 10px 10px;
     border-color: transparent transparent #ccc transparent;
+}
+.dropdown-item.active, 
+.dropdown-item:active {
+    background-color: #666;
 }
 /* .collapse:not(.show){ display: block; }
 .collapse:not(.show) > ul{ display:none; }
@@ -107,6 +115,8 @@ screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 }
 
 @media (max-width: 991px) {
+    .form-inline input { width: 70%;}
+    .form-inline button { width: 25%;}
     .nav-tabs .nav-link.active:before, 
     .nav-tabs .nav-item.show .nav-link:before {
         bottom: calc(-50% + 10px);
