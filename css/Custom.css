@@ -6,7 +6,7 @@ nav {
     z-index: 1;
 }
 .main {
-    padding-top: 56px;
+    padding-top: 76px;
 }
 .border-1 {
     border-width: 1px;
@@ -46,7 +46,7 @@ nav {
     overflow: auto;
 }
 .nav-tabs .nav-link {
-    color: #eee;
+    color: #666;
 }
 .tab-content > .active {
     display: flex;
@@ -96,13 +96,21 @@ nav {
     background-color: #f4f4f4;
 }
 .color-2 .bg-second {
-    background-color: #ff7315;
+    background-color: #ffdada;
 }
 .color-2 .bg-third {
     background-color: #3a3535;
 }
 .color-2 .bg-fourth {
-    background-color: #232020;
+    background-color: #fceef5;
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: darkgrey;
+    font-size: 0.8rem;
 }
 
 /* Only For computer */
