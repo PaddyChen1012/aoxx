@@ -6,7 +6,7 @@ nav {
     z-index: 1;
 }
 .main {
-    padding-top: 76px;
+    padding-top: 60px;
 }
 .border-1 {
     border-width: 1px;
@@ -142,5 +142,8 @@ screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .nav-tabs .nav-link.active:before, 
     .nav-tabs .nav-item.show .nav-link:before {
         bottom: calc(-50% + 10px);
+    }
+    .border-lg-top {
+        border-top:1px solid #666;
     }
 }
