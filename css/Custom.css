@@ -1,0 +1,114 @@
+.advertising {
+    display: none;
+}
+nav {
+    position: fixed !important;
+    z-index: 1;
+}
+.main {
+    padding-top: 56px;
+}
+.border-1 {
+    border-width: 1px;
+}
+.border-2 {
+    border-width: 2px;
+}
+.border-3 {
+    border-width: 3px;
+}
+.border-4 {
+    border-width: 4px;
+}
+.border-5 {
+    border-width: 5px;
+}
+.divider-y {
+    width: 2px;
+    height: 80px;
+}
+.divider-x {
+    width: 80px;
+    height: 2px;
+}
+
+/* header */
+.tab-content {
+    position: absolute;
+    background: #ccc;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    overflow: auto;
+}
+.nav-tabs .nav-link {
+    color: #eee;
+}
+.tab-content > .active {
+    display: flex;
+}
+.nav-tabs .nav-link.active, 
+.nav-tabs .nav-item.show .nav-link {
+    position: relative;
+    background-color: unset;
+    border: unset;
+}
+.nav-tabs .nav-link.active:before, 
+.nav-tabs .nav-item.show .nav-link:before {
+    content: '';
+    position: absolute;
+    bottom: -50%;
+    left: calc(50% - 10px);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #ccc transparent;
+}
+/* .collapse:not(.show){ display: block; }
+.collapse:not(.show) > ul{ display:none; }
+.collapse.show > form{ display:none; } */
+
+/* 配色一 */
+.color-1 .bg-first {
+    background-color: #e3fdfd;
+}
+.color-1 .bg-second {
+    background-color: #cadefc;
+}
+.color-1 .bg-third {
+    background-color: #c3bef0;
+}
+.color-1 .bg-fourth {
+    background-color: #cca8e9;
+}
+
+/* 配色二 */
+.color-2 .bg-first {
+    background-color: #f4f4f4;
+}
+.color-2 .bg-second {
+    background-color: #ff7315;
+}
+.color-2 .bg-third {
+    background-color: #3a3535;
+}
+.color-2 .bg-fourth {
+    background-color: #232020;
+}
+
+/* Only For computer */
+@media (pointer: fine),
+(pointer: fine) and (-moz-touch-enabled: 0),
+screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .hover:hover {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5) !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .nav-tabs .nav-link.active:before, 
+    .nav-tabs .nav-item.show .nav-link:before {
+        bottom: calc(-50% + 10px);
+    }
+}
