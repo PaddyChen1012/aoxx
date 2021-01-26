@@ -115,6 +115,9 @@ nav {
 .color-2 .bg-fourth {
     background-color: #fceef5;
 }
+.border-top {
+    border-color: #3a3535 !important;
+}
 
 .ellipsis {
     overflow: hidden;
