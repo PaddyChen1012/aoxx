@@ -172,10 +172,10 @@ screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     opacity: .8;
 }
 .bg-lp-1 {
-    background-color: rgba(253, 209, 209, .5);
+    background-color: rgba(247, 176, 194, .8);
 }
 .bg-lp-2 {
-    background-color: rgba(255, 188, 229, .5);
+    background-color: rgba(255, 89, 131, .8);
 }
 @media (min-width: 992px) {
     body {
