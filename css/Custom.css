@@ -31,7 +31,9 @@ nav {
     width: 80px;
     height: 2px;
 }
-
+.bg-black-50 {
+    background: rgba(0, 0, 0, 0.5);
+}
 /* header */
 .ionicon {
     width: 18px;
@@ -145,5 +147,38 @@ screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     }
     .border-lg-top {
         border-top:1px solid #666;
+    }
+}
+
+/*LP*/
+.bg-warp {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: url(../images/LP-1_1920x1080.jpg) no-repeat top/cover;
+    z-index: -1;
+}
+.bg-LP {
+    height: 100vh;
+}
+.btn-lp {
+    background: rgba(0, 0, 0, 1);
+    color: #fff !important;
+    opacity: .5;
+}
+.btn-lp:hover {
+    opacity: .8;
+}
+.bg-lp-1 {
+    background-color: rgba(253, 209, 209, .5);
+}
+.bg-lp-2 {
+    background-color: rgba(255, 188, 229, .5);
+}
+@media (min-width: 992px) {
+    body {
+        position: relative;
     }
 }
