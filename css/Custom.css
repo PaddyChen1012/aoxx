@@ -57,9 +57,6 @@ nav {
 .nav-tabs .nav-link {
     color: #666;
 }
-.tab-content > .active {
-    display: flex;
-}
 .nav-tabs .nav-link.active, 
 .nav-tabs .nav-item.show .nav-link {
     position: relative;
@@ -70,7 +67,7 @@ nav {
 .nav-tabs .nav-item.show .nav-link:before {
     content: '';
     position: absolute;
-    bottom: -25%;
+    bottom: -30%;
     left: calc(50% - 10px);
     width: 0;
     height: 0;
@@ -139,8 +136,8 @@ screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 }
 
 @media (max-width: 991px) {
-    .form-inline input { width: 70%;}
-    .form-inline button { width: 25%;}
+    .form-inline input { width: calc(100% - 60px) !important;}
+    .form-inline button { width: 40px;}
     .nav-tabs .nav-link.active:before, 
     .nav-tabs .nav-item.show .nav-link:before {
         bottom: calc(-30% + 10px);
@@ -149,7 +146,11 @@ screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
         border-top:1px solid #666;
     }
 }
-
+@media (min-width: 992px) {
+    .tab-content > .active {
+        display: flex;
+    }
+}
 /*LP*/
 .bg-warp {
     position: absolute;
