@@ -177,10 +177,11 @@ screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 .bg-lp-2 {
     background-color: rgba(255, 89, 131, .8);
 }
-.rounded-1 { border-radius: 1rem 0 0 0;}
-.rounded-2 { border-radius: 0 1rem 0 0;}
+
 @media (min-width: 992px) {
     body {
         position: relative;
     }
+    .rounded-1 { border-radius: 1rem 0 0 0;}
+    .rounded-2 { border-radius: 0 1rem 0 0;}
 }
