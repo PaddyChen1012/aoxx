@@ -164,8 +164,8 @@ screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     height: 100vh;
 }
 .btn-lp {
-    background: rgba(0, 0, 0, 1);
-    color: #fff !important;
+    background: rgba(255, 255, 255, 1);
+    color: #000 !important;
     opacity: .5;
 }
 .btn-lp:hover {
@@ -177,6 +177,8 @@ screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 .bg-lp-2 {
     background-color: rgba(255, 89, 131, .8);
 }
+.rounded-1 { border-radius: 1rem 0 0 0;}
+.rounded-2 { border-radius: 0 1rem 0 0;}
 @media (min-width: 992px) {
     body {
         position: relative;
