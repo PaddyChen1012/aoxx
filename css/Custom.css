@@ -152,6 +152,10 @@ screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     }
 }
 /*LP*/
+.lp-logo {
+    top: 20px;
+    right: 20px;
+}
 .bg-warp {
     position: absolute;
     top: 0;
