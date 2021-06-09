@@ -9,16 +9,48 @@
 <style>
     *{margin:0;padding:0;box-sizing:border-box;}
     body{background:#000;overflow-x: hidden;}
-    .home-wrap{width:100%;padding-bottom:42%;}
-    .page-kind{display:flex;}
+    .home-wrap{position:relative;display:flex;align-items:center;justify-content:center;width:100%;padding-bottom:52.5%;}
+    .off{display:none;}
+    .page-kind{display:flex;flex-wrap:wrap;}
     .kind-btn{flex:50%;}
     .kind-btn img{width: 100%;}
+    .btn{position:absolute;top:50%;display:flex;align-items:center;justify-content:center;width:280px;height:120px;background:#d65799;border-radius:15px;color:#fff;font-size: 48px;text-decoration: none;}
+    .btn-word{position:absolute;top:10px;bottom:10px;right:10px;left:10px;display:flex;align-items:center;justify-content:center;border:2px solid #fff;border-radius:10px;}
+    .btn:hover{opacity:.8;}
+    @media screen and (max-width:500px) {
+        .kind-btn{flex:100%;}
+        .home-wrap{padding-bottom:170%;}
+    }
 </style>
 <body>
-    <div class="home-wrap" style="background:url(images/onz-wrap.jpg)no-repeat center/cover;"></div>
-    <div class="page-kind">
-        <div class="kind-btn"><img src="images/LP(news)_600x300.jpg" alt=""></div>
-        <div class="kind-btn"><img src="images/LP(story)_600x300.jpg" alt=""></div>
+    <div id="banner0" class="home-wrap" name="bannerBox">
+        <a id="link0" href="" target="_blank" class="btn"><span class="btn-word">ดูได้ที่นี่</span class="btn-word"></a>
     </div>
+    <div id="banner1" class="home-wrap" name="bannerBox">
+        <a id="link1" href="" target="_blank" class="btn"><span class="btn-word">ดูได้ที่นี่</span class="btn-word"></a>
+    </div>
+    <div id="banner2" class="home-wrap" name="bannerBox">
+        <a id="link2" href="" target="_blank" class="btn"><span class="btn-word">ดูได้ที่นี่</span class="btn-word"></a>
+    </div>
+    <div id="banner3" class="home-wrap" name="bannerBox">
+        <a id="link3" href="" target="_blank" class="btn"><span class="btn-word">ดูได้ที่นี่</span class="btn-word"></a>
+    </div>
+    <div id="banner4" class="home-wrap" name="bannerBox">
+        <a id="link4" href="" target="_blank" class="btn"><span class="btn-word">ดูได้ที่นี่</span class="btn-word"></a>
+    </div>
+    <div id="banner5" class="home-wrap" name="bannerBox">
+        <a id="link5" href="" target="_blank" class="btn"><span class="btn-word">ดูได้ที่นี่</span class="btn-word"></a>
+    </div>
+    <div id="banner6" class="home-wrap" name="bannerBox">
+        <a id="link6" href="" target="_blank" class="btn"><span class="btn-word">ดูได้ที่นี่</span class="btn-word"></a>
+    </div>
+    <div id="banner7" class="home-wrap" name="bannerBox">
+        <a id="link7" href="" target="_blank" class="btn"><span class="btn-word">ดูได้ที่นี่</span class="btn-word"></a>
+    </div>
+    <div class="page-kind">
+        <div class="kind-btn"><a href="" target="_self"><img src="images/LP(news)_600x300.jpg" alt=""></a></div>
+        <div class="kind-btn"><a href="" target="_self"><img src="images/LP(story)_600x300.jpg" alt=""></a></div>
+    </div>
+    <script src="js/myJS.js"></script>
 </body>
 </html>

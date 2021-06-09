@@ -13,33 +13,20 @@ request.onload = function() {
 function loadData(obj) {
     var onz_LP = obj['ONZMAIN'];
 
-    var homeWrap = document.querySelector('#homeWrap');
-    var pageImg = document.querySelector('#pageImg img');
-    // var Link1 = document.querySelector('#Link1');
-    // var Link2 = document.querySelector('#Link2');
-    var GameMain1 = document.querySelector('#GameMain1')
-    var GameMain2 = document.querySelector('#GameMain2')
-    var GameMain3 = document.querySelector('#GameMain3')
-    var GameMain4 = document.querySelector('#GameMain4')
+    let bannerNum = document.querySelectorAll('[name="bannerBox"]');
 
-    function getNum(btnNo) {
-        Num = btnNo.target.dataset.no;
-        GameName.textContent = onz_LP[Num].name;
-        pageImg.setAttribute('src', onz_LP[Num].img)
-        // Link1.setAttribute('href', onz_LP[Num].link1);
-        // Link2.setAttribute('href', onz_LP[Num].link2);
-        GameMain1.textContent = onz_LP[Num].main1;
-        GameMain2.textContent = onz_LP[Num].main2;
-        GameMain3.textContent = onz_LP[Num].main3;
-        GameMain4.textContent = onz_LP[Num].main4;
+    console.log(bannerNum.length);    
+
+    for( i=0 ; i<bannerNum.length; i++){
+        let a = '#banner' + i;
+        let b = '#link' + i;
+        let banner = document.querySelector(a);
+        let link = document.querySelector(b);
+
+        banner.classList.add(onz_LP[i].onoff);
+        banner.setAttribute('style', 'background:url(' + onz_LP[i].img + ')' + 'no-repeat center/cover;')
+        link.setAttribute('href', onz_LP[i].link)
     }
-
-    var el = document.body;
-    el.addEventListener('click', getNum, false);
     
-}
-let btnNo = document.querySelectorAll('[name="btn"]');
-for(var j = 0; j < btnNo.length ; j++) {
-    btnNo[j].addEventListener('click', loadData,false);
 }
 
