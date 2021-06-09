@@ -2,42 +2,42 @@
     "ONZMAIN" : [
         {
             "onoff" : "on",
-            "img" : "images/onz-wrap.jpg",
+            "img" : "images/Shinoda-Yu.jpg",
             "link" : "123"
         },
         {
-            "onoff" : "on",
-            "img" : "images/onz-wrap.jpg",
+            "onoff" : "off",
+            "img" : "images/.jpg",
             "link" : "234"
         },
         {
             "onoff" : "off",
-            "img" : "images/onz-wrap.jpg",
+            "img" : "images/.jpg",
             "link" : "345"
         },
         {
             "onoff" : "off",
-            "img" : "images/onz-wrap.jpg",
+            "img" : "images/.jpg",
             "link" : "123"
         },
         {
             "onoff" : "off",
-            "img" : "images/onz-wrap.jpg",
+            "img" : "images/.jpg",
             "link" : "234"
         },
         {
             "onoff" : "off",
-            "img" : "images/onz-wrap.jpg",
+            "img" : "images/.jpg",
             "link" : "345"
         },
         {
             "onoff" : "off",
-            "img" : "images/onz-wrap.jpg",
+            "img" : "images/.jpg",
             "link" : "123"
         },
         {
             "onoff" : "off",
-            "img" : "images/onz-wrap.jpg",
+            "img" : "images/.jpg",
             "link" : "234"
         }
     ]
