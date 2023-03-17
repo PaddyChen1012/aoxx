@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://dev.xav69.com/assets/511ade84/css/bootstrap.css">
+    <style>
+        .warp {
+            background-color: #ff5983;
+        }
+        .page{
+            height: 100vh;
+        }
+        .warp-img {
+            width: 500px;
+            max-width: 100%;
+            z-index: 1
+        }
+        .page-1 .color-bg{
+            clip-path: polygon(0 0, 100% 0%, 100% 65%, 50% 85%, 0 65%);
+            background-color: #040c68;
+        }
+        .page-2 .color-bg{
+            clip-path: polygon(0 30%, 74% 0, 100% 15%, 100% 100%, 0% 100%);
+            background-color: #040c68;
+        }
+        .page>div>div{
+            width: 50%;
+            min-width: 750px;
+        }
+        .page-1>div>div{
+            padding: 1% 1% 0;
+        }
+        .page-2>div>div{
+            padding: 0 1% 1%;
+        }
+        .phone-img{width: 40%;}
+        .word-img{width: 60%;}
+        .btn{
+            width: 50vw;
+            height: 20vw;
+            max-width: 200px;
+            max-height: 60px;
+        }
+        .btn img{
+            width: 60px;
+            height: 60px;
+            padding: 15px;
+        }
+        .btn div{
+            width: calc(100% - 30px);
+        }
+
+        @media (max-width: 766px){
+            .page>div>div{
+                width: 75%;
+                min-width: unset;
+            }
+            .page-1>div>div{
+                padding: 2.5% 2.5% 0;
+            }
+            .page-2>div>div{
+                padding: 0 2.5% 2.5%;
+            }
+        }
+
+        @media (max-width: 575px){
+            .warp-img {
+                width: 100%;
+            }
+            .page>div>div{
+                width: 100%;
+            }
+            .page-1>div>div{
+                padding: 5% 5% 0;
+            }
+            .page-2>div>div{
+                padding: 0 5% 5%;
+            }
+            .phone-img{width: 50%;top: 0%;left: 50%;z-index: 9;}
+            .word-img{width: 100%;}
+        }
+    </style>
+</head>
+<body>
+    <section class="warp w-100">
+        <div class="position-relative page page-1 row justify-content-center w-100 m-0">
+            <div class="color-bg w-100 h-100"></div>
+            <div class="position-absolute d-flex align-items-center justify-content-center w-100 h-100">
+                <div class="d-flex justify-content-center flex-wrap">
+                    <img class="warp-img mb-4" src="images/AD0315-1_1040x1040_nobg.png" alt="">
+                    <div class="d-flex flex-column flex-sm-row">
+                        <a class="btn btn-light d-flex align-items-center justify-content-center m-3 p-0" href="">
+                            <img class="border-right" src="images/android-icon.png" alt=""><div >APK Download</div>
+                        </a>
+                        <a class="btn btn-light d-flex align-items-center justify-content-center m-3 p-0" href="">
+                            <img class="border-right" src="images/link-icon.png" alt=""><div >Change Line</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="position-relative page page-2 row justify-content-center w-100 m-0">
+            <div class="color-bg w-100 h-100"></div>
+            <div class="position-absolute d-flex align-items-center justify-content-center w-100 h-100">
+                <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center">
+                    <img class="phone-img mw-100" src="images/phone.png" alt="">
+                    <img class="word-img mw-100" src="images/text_thai.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
