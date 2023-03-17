@@ -7,96 +7,108 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://dev.xav69.com/assets/511ade84/css/bootstrap.css">
     <style>
-        .warp {
+        .change-page.warp {
             background-color: #ff5983;
         }
-        .page{
+        .change-page .logo{
+            top: 8px;
+            left: 8px;
+            width: 240px;
+            z-index: 1;
+        }
+        .change-page .page{
             height: 100vh;
         }
-        .warp-img {
+        .change-page .warp-img {
             width: 500px;
             max-width: 100%;
             z-index: 1
         }
-        .page-1 .color-bg{
+        .change-page .page-1 .color-bg{
             clip-path: polygon(0 0, 100% 0%, 100% 65%, 50% 85%, 0 65%);
-            background-color: #040c68;
+            background-color: #3a1b33;
         }
-        .page-2 .color-bg{
+        .change-page .page-2 .color-bg{
             clip-path: polygon(0 30%, 74% 0, 100% 15%, 100% 100%, 0% 100%);
-            background-color: #040c68;
+            background-color: #3a1b33;
         }
-        .page>div>div{
+        .change-page .page>div>div{
             width: 50%;
             min-width: 750px;
         }
-        .page-1>div>div{
+        .change-page .page-1>div>div{
             padding: 1% 1% 0;
         }
-        .page-2>div>div{
+        .change-page .page-2>div>div{
             padding: 0 1% 1%;
         }
-        .phone-img{width: 40%;}
-        .word-img{width: 60%;}
-        .btn{
+        .change-page .phone-img{width: 40%;}
+        .change-page .word-img{width: 60%;}
+        .change-page .btn{
             width: 50vw;
             height: 20vw;
             max-width: 200px;
             max-height: 60px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px inset;
         }
-        .btn img{
+        .change-page .btn img{
             width: 60px;
             height: 60px;
             padding: 15px;
         }
-        .btn div{
+        .change-page .btn div{
             width: calc(100% - 30px);
         }
 
         @media (max-width: 766px){
-            .page>div>div{
+            .change-page .page>div>div{
                 width: 75%;
                 min-width: unset;
             }
-            .page-1>div>div{
+            .change-page .page-1>div>div{
                 padding: 2.5% 2.5% 0;
             }
-            .page-2>div>div{
+            .change-page .page-2>div>div{
                 padding: 0 2.5% 2.5%;
             }
         }
 
         @media (max-width: 575px){
-            .warp-img {
+            .change-page .logo{
+                left: calc(50% - 120px);
+            }
+            .change-page .warp-img {
                 width: 100%;
             }
-            .page>div>div{
+            .change-page .page>div>div{
                 width: 100%;
             }
-            .page-1>div>div{
+            .change-page .page-1>div>div{
                 padding: 5% 5% 0;
             }
-            .page-2>div>div{
+            .change-page .page-2>div>div{
                 padding: 0 5% 5%;
             }
-            .phone-img{width: 50%;top: 0%;left: 50%;z-index: 9;}
-            .word-img{width: 100%;}
+            .change-page .phone-img{width: 50%;top: 0%;left: 50%;z-index: 9;}
+            .change-page .word-img{width: 100%;}
         }
     </style>
 </head>
 <body>
-    <section class="warp w-100">
+    <section class="change-page warp w-100">
+        <img class="position-absolute logo" src="images/LOGO.png" alt="">
         <div class="position-relative page page-1 row justify-content-center w-100 m-0">
             <div class="color-bg w-100 h-100"></div>
             <div class="position-absolute d-flex align-items-center justify-content-center w-100 h-100">
                 <div class="d-flex justify-content-center flex-wrap">
                     <img class="warp-img mb-4" src="images/AD0315-1_1040x1040_nobg.png" alt="">
                     <div class="d-flex flex-column flex-sm-row">
-                        <a class="btn btn-light d-flex align-items-center justify-content-center m-3 p-0" href="">
-                            <img class="border-right" src="images/android-icon.png" alt=""><div >APK Download</div>
+                        <a class="btn btn-light d-flex align-items-center justify-content-center border-0 m-3 p-0" href="">
+                            <img class="border-right" src="images/android-icon.png" alt=""><div class="font-weight-bold">APK Download</div>
                         </a>
-                        <a class="btn btn-light d-flex align-items-center justify-content-center m-3 p-0" href="">
-                            <img class="border-right" src="images/link-icon.png" alt=""><div >Change Line</div>
+                        <a class="btn btn-light d-flex align-items-center justify-content-center border-0 m-3 p-0" href="">
+                            <img class="border-right" src="images/link-icon.png" alt=""><div class="font-weight-bold">Change Line</div>
                         </a>
                     </div>
                 </div>
