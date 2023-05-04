@@ -42,6 +42,9 @@
         .change-page .page-2>div>div{
             padding: 0 1% 1%;
         }
+        .btn-box{
+            max-width: 470px;
+        }
         .change-page .animation{
             animation: down-animation 1.2s ease infinite;
         } 
@@ -108,18 +111,24 @@
 </head>
 <body>
     <section class="change-page warp w-100">
-        <img class="position-absolute logo" src="images/LOGO.png" alt="">
+        <img class="position-absolute logo" src="images/LOGO.png" alt="aoxx69">
         <div class="position-relative page page-1 row justify-content-center w-100 m-0">
             <div class="color-bg w-100 h-100"></div>
             <div class="position-absolute d-flex align-items-center justify-content-center w-100 h-100">
                 <div class="d-flex justify-content-center flex-wrap">
-                    <img class="warp-img mb-4" src="images/AD0315-1_1040x1040_nobg.png" alt="">
-                    <div class="d-flex flex-column flex-sm-row">
-                        <a class="btn btn-light d-flex align-items-center justify-content-center border-0 mx-3 my-1 p-0" href="">
-                            <img class="border-right" src="images/android-icon.png" alt=""><div class="font-weight-bold">APK Download</div>
+                    <img class="warp-img mb-4" src="images/AD0315-1_1040x1040_nobg.png" alt="aoxx69">
+                    <div class="d-flex flex-column flex-sm-row justify-content-around flex-wrap btn-box">
+                        <a class="btn btn-light download-btn d-flex align-items-center justify-content-center border-0 mx-3 my-1 p-0" href="">
+                            <img class="border-right" src="images/android-icon.png" alt=""><div class="font-weight-bold download-btn-wd">APK Download</div>
                         </a>
-                        <a class="btn btn-light d-flex align-items-center justify-content-center border-0 mx-3 my-1 p-0" href="">
-                            <img class="border-right" src="images/link-icon.png" alt=""><div class="font-weight-bold">Change Line</div>
+                        <a class="btn btn-light line-btn d-flex align-items-center justify-content-center border-0 mx-3 my-1 p-0" href="">
+                            <img class="border-right" src="images/Line@-icon.png" alt=""><div class="font-weight-bold line-btn-wd">ฝ่ายบริการลูกค้า</div>
+                        </a>
+                        <a class="btn btn-light link-btn d-flex align-items-center justify-content-center border-0 mx-3 my-1 p-0" href="">
+                            <img class="border-right" src="images/link-icon.png" alt=""><div class="font-weight-bold link-btn-wd">ลิงก์สำรอง</div>
+                        </a>
+                        <a class="btn btn-light link-btn d-flex align-items-center justify-content-center border-0 mx-3 my-1 p-0" href="">
+                            <img class="border-right" src="images/link-icon.png" alt=""><div class="font-weight-bold link-btn-wd">ลิงก์สำรอง</div>
                         </a>
                     </div>
                     <i class="w-100 text-center">
@@ -135,12 +144,42 @@
             <div class="color-bg w-100 h-100"></div>
             <div class="position-absolute d-flex align-items-center justify-content-center w-100 h-100">
                 <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center">
-                    <img class="phone-img mw-100" src="images/phone.png" alt="">
-                    <img class="word-img mw-100" src="images/text_thai.png" alt="">
+                    <img class="phone-img mw-100" src="images/phone.png" alt="aoxx69">
+                    <img class="word-img mw-100" src="images/text_thai.png" alt="aoxx69">
                 </div>
             </div>
         </div>
     </section>
+
+    <script>
+        let requestURL = 'data.json';
+        let request = new XMLHttpRequest();
+        request.open('GET', requestURL);
+        request.responseType = 'json';
+        request.send();
+
+        request.onload = function() {
+            const data = request.response;
+            const lang = 'en'
+            loadData(data,lang);
+        }
+
+        function loadData(obj,lang) {
+            var e = obj[lang];
+
+            let warpImg = document.querySelector('.warp-img');
+            let wordImg = document.querySelector('.word-img');
+            let lineBtnWd = document.querySelector('.line-btn-wd');
+            let linkBtnWd = document.querySelectorAll('.link-btn-wd');
+
+            warpImg.setAttribute('src', e[0]['img-1'])
+            wordImg.setAttribute('src', e[0]['img-2'])
+            lineBtnWd.textContent = e[0]['line-btn-wd'];
+            for (let i=0; i<linkBtnWd.length; i++){
+                linkBtnWd[i].textContent = e[0]['link-btn-wd'] + '-' + (i+1);
+            }
+        }
+    </script>
 
 </body>
 </html>

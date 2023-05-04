@@ -1,0 +1,18 @@
+{
+    "th" : [
+        {
+            "img-1" : "images/AD0315-1_1040x1040_nobg.png",
+            "line-btn-wd" : "ฝ่ายบริการลูกค้า",
+            "link-btn-wd" : "ลิงก์สำรอง",
+            "img-2" : "images/text_thai.png"
+        }
+    ],
+    "en" : [
+        {
+            "img-1" : "images/AD0315-1_1040x1040_en.png",
+            "line-btn-wd" : "contact us",
+            "link-btn-wd" : "change line",
+            "img-2" : "images/text_en.png"
+        }
+    ]
+}
