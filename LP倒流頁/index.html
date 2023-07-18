@@ -114,7 +114,7 @@
             background: linear-gradient(180deg, #ff5983 0%, rgba(255,255,255,.45) 15% 100%),url(images/49213c9f6fcc60940f0e86b65efb9246_1280.webp)no-repeat center/cover fixed;
         }
         .msg-box{
-            background: rgba(255,255,255,.5);
+            background: rgb(255 89 131 / 25%);
             border-radius: 10px;
             font-size: 1.25rem;
         }
@@ -165,11 +165,52 @@
         }
 
         .contact-btn{
-            bottom: 0px;
-            right: 0px;
+            bottom: -25px;
+            right: -25px;
             width: 100px;
             height: 100px;
+            background: #ff9fb7;
+            border-width: 10px;
+            border-color: rgb(255 255 255);
+            box-shadow: 0 0 10px #fff inset;
+            z-index: 3;
+        }
+        .btn-wrap{
+            bottom: -25px;
+            right: -25px;
+            width: 100px;
+            height: 100px;
+            background: rgb(58 27 51 / 75%);
             z-index: 2;
+        }
+        .btn-wrap.show{
+            bottom: -100px;
+            right: -100px;
+            width: 300px;
+            height: 300px;
+            transition: all .4s ease;
+        }
+        .link-download{
+            bottom: 8px;
+            left: 8px;
+            width: 80px;
+            height: 80px;
+            background: rgba(255,255,255,1);
+            z-index: 2;
+        }
+        .link-circle{
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background: rgba(255,255,255,1);
+        }
+        .link-circle:nth-child(1){
+            top: 8%;
+            left: 35%;
+        }
+        .link-circle:nth-child(2){
+            top: 35%;
+            left: 8%;
         }
     </style>
 </head>
@@ -189,7 +230,21 @@
             </a>
         </div>
     </div> -->
-    <button class="position-fixed contact-btn rounded-circle">聯絡我們</button>
+    <!-- <a class="position-fixed link-download btn line-btn d-flex flex-wrap align-items-center justify-content-center rounded-circle p-0" href="https://t.me/paiyed69">
+        <img class="w-100 p-1" src="images/android-icon.png" alt="">Download
+    </a> -->
+    <button class="position-fixed contact-btn rounded-circle">
+        <svg class="contact-icon" width="50px" height="50px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g fill="none" fill-rule="evenodd" id="" stroke="none" stroke-width="1"> <g id="" transform="translate(-251.000000, -207.000000)"> <g id="" transform="translate(251.000000, 207.000000)"> <rect fill="#FFFFFF" fill-opacity="0.01" fill-rule="nonzero" height="24" id="" width="24" x="0" y="0"></rect> <path d="M18,16 C20.20915,16 22,14.20915 22,12 C22,9.79085 20.20915,8 18,8" id=""></path> <path d="M18,16 L18,16 C20.20915,16 22,14.20915 22,12 C22,9.79085 20.20915,8 18,8" id="" stroke="#212121" stroke-linejoin="round" stroke-width="1.5"></path> <path d="M6,8 C3.79086,8 2,9.79085 2,12 C2,14.20915 3.79086,16 6,16" id=""></path> <path d="M6,8 C3.79086,8 2,9.79085 2,12 C2,14.20915 3.79086,16 6,16 L6,16" id="" stroke="#212121" stroke-linejoin="round" stroke-width="1.5"></path> <path d="M6,16 L6,15.75 L6,14.5 L6,12 L6,8 C6,4.68629 8.6863,2 12,2 C15.3137,2 18,4.68629 18,8 L18,16 C18,19.3137 15.3137,22 12,22" id="" stroke="#212121" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path> </g> </g> </g> </g></svg>
+        <svg class="close-icon d-none" width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0_429_11083)"> <path d="M7 7.00006L17 17.0001M7 17.0001L17 7.00006" stroke="#292929" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path> </g> <defs> <clipPath id="clip0_429_11083"> <rect width="24" height="24" fill="white"></rect> </clipPath> </defs> </g></svg>
+    </button>
+    <div class="position-fixed btn-wrap rounded-circle">
+        <a class="link-circle btn line-btn d-flex align-items-center justify-content-center rounded-circle mb-2 p-0" href="https://lin.ee/PEQGiMN">
+            <img class="w-100 p-3" src="images/Line@-icon.png" alt="">
+        </a>
+        <a class="link-circle btn line-btn d-flex align-items-center justify-content-center rounded-circle p-0" href="https://t.me/paiyed69">
+            <img class="w-100 p-3" src="images/telegram-communication-chat-interaction-network-connection-svgrepo-com.svg" alt="">
+        </a>
+    </div>
 
     <section class="change-page warp w-100">
         <img class="position-absolute logo" src="images/LOGO.png" alt="aoxx69">
@@ -199,10 +254,10 @@
                 <div class="d-flex justify-content-center flex-wrap">
                     <img class="warp-img mb-4" src="images/AD0315-1_1040x1040_nobg.png" alt="aoxx69">
                     <div class="d-flex flex-column flex-sm-row justify-content-around flex-wrap btn-box">
-                        <!-- <a class="link-1 btn btn-light download-btn d-flex align-items-center justify-content-center border-0 mx-3 mb-3 p-0" href="/H52C33BD0_0510064628.apk">
+                        <a class="link-1 btn btn-light download-btn d-flex align-items-center justify-content-center border-0 mx-3 mb-3 p-0" href="/H52C33BD0_0510064628.apk">
                             <img class="border-right" src="images/android-icon.png" alt=""><div class="font-weight-bold download-btn-wd">APK Download</div>
                         </a>
-                        <a class="link-2 btn btn-light line-btn d-flex align-items-center justify-content-center border-0 mx-3 mb-3 p-0" href="https://lin.ee/PEQGiMN">
+                        <!-- <a class="link-2 btn btn-light line-btn d-flex align-items-center justify-content-center border-0 mx-3 mb-3 p-0" href="https://lin.ee/PEQGiMN">
                             <img class="border-right" src="images/Line@-icon.png" alt=""><div class="font-weight-bold line-btn-wd">line@</div>
                         </a>
                         <a class="link-2 btn btn-light line-btn d-flex align-items-center justify-content-center border-0 mx-3 mb-3 p-0" href="https://t.me/paiyed69">
@@ -289,7 +344,7 @@
         </div>
         <div class="position-relative page page-5 row align-items-center justify-content-center w-100 m-0">
             <div class="row justify-content-around w-100">
-                <div class="col-11 col-md-8 p-2 d-flex flex-column justify-content-center">
+                <div class="col-11 col-md-8 p-2 d-flex flex-column justify-content-center mt-5">
                     <h2 class="text-center mb-4 w-100">หน้าสาวเอวี</h2>
                     <div class="msg-box p-3 mb-4 w-100">
                         สาวเอวีที่กำลังมาแรงอย่าง Kawakita Saika, Koyoi Konan, Yamate Ria, Rei Kamiki และSuzumori Remu หรือสาวเอวีที่เพิ่งเดบิวต์มาใหม่ ที่นี่มีผลงานและคลังข้อมูลของสาวเอวีที่ครบครัน อยากดูหนังสาวเอวีคนโปรดแต่หาไม่เจอ? รีบมาค้นหาบน AOXX ได้เลยตอนนี้！
@@ -389,6 +444,12 @@
             obj_n = 0;
             testSpeed();
         });
+
+        $('.contact-btn').click(function(){
+            $('.btn-wrap').toggleClass('show');
+            $('.contact-icon').toggleClass('d-none');
+            $('.close-icon').toggleClass('d-none');
+        })
     </script>
 
 </body>
