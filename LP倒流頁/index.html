@@ -6,7 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://dev.xav69.com/assets/511ade84/css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <style>
+        *{
+            /* padding: 0; */
+            margin: 0;
+            font-family: 'Itim', cursive;
+        }
+        h2{
+            font-size: calc(2.5rem + 2.5vw);
+            text-shadow: 1px 1px 0px #fff,1px 0px 0px #fff,1px -1px 0px #fff,0px -1px 0px #fff,-1px -1px 0px #fff,-1px 0px 0px #fff,-1px 1px 0px #fff,0px 1px 0px #fff,1px 1px 2px #ff5983,1px 0px 2px #ff5983,1px -1px 2px #ff5983,0px -1px 2px #ff5983,-1px -1px 2px #ff5983,-1px 0px 2px #ff5983,-1px 1px 2px #ff5983,0px 1px 2px #ff5983;
+        }
         .fixed-box{
             bottom: 10px;
             right: 10px;
@@ -42,6 +54,7 @@
         .change-page .page-2 .color-bg{
             clip-path: polygon(0 30%, 74% 0, 100% 15%, 100% 100%, 0% 100%);
             background-color: #3a1b33;
+            background: linear-gradient(0deg, #ffffff 0%, rgba(255,255,255,0.55) 15% 85% , #ffffff 100%),url(images/f36624a369639398833c84565211fb15.jpg)no-repeat center/cover;
         }
         .change-page .page-1>div>div{
             width: 50%;
@@ -63,7 +76,7 @@
             color: #fff;
         }
         .change-page .phone-img{width: 40%;}
-        .change-page .word-img{width: 60%;}
+        .change-page .word-img{width: 60%;background: #3a1b3380;border-radius: 10px;}
         .change-page .btn{
             position: relative;
             width: 50vw;
@@ -105,13 +118,13 @@
             padding-right: 60px;
         }
         .page-3{
-            background: linear-gradient(180deg, #3a1b33 0%, rgba(255,255,255,.45) 15% 85% , #ffffff 100%),url(images/sexy-woman-listening-music.jpg)no-repeat left/cover fixed;
+            background: linear-gradient(180deg, #ffffff 0%, rgba(255,255,255,.45) 15% 85% , #ffffff 100%),url(images/sexy-woman-listening-music.jpg)no-repeat left/cover fixed;
         }
         .page-4{
-            background: linear-gradient(180deg, #ffffff 0%, rgba(255,255,255,.75) 15% 85%,#ff5983 100%),url(images/asian-beautiful-woman.jpg)no-repeat center/cover;
+            background: linear-gradient(180deg, #ffffff 0%, rgba(255,255,255,.75) 15% 85%,#ffffff 100%),url(images/Asian_Pose_Chairs_Sitting_Legs_Shorts_Singlet_613589_1280x853.jpg)no-repeat center/cover;
         }
         .page-5{
-            background: linear-gradient(180deg, #ff5983 0%, rgba(255,255,255,.45) 15% 100%),url(images/49213c9f6fcc60940f0e86b65efb9246_1280.webp)no-repeat center/cover fixed;
+            background: linear-gradient(180deg, #ffffff 0%, rgba(255,255,255,.45) 15% 100%),url(images/1-1910061102390-L.jpg)no-repeat center/cover fixed;
         }
         .msg-box{
             background: rgb(255 89 131 / 25%);
@@ -215,7 +228,7 @@
     </style>
 </head>
 <body>
-    <!-- <div class="position-fixed fixed-box">
+    <div class="position-fixed fixed-box">
         <div class="apk-box mb-3 p-0">
             <a class="link-1 btn btn-light download-btn d-flex align-items-center justify-content-center border-0 rounded-circle p-2" href="/H52C33BD0_0510064628.apk">
                 <img class="w-100" src="images/android-icon.png" alt="">
@@ -229,11 +242,11 @@
                 <img class="w-100 p-2" src="images/telegram-communication-chat-interaction-network-connection-svgrepo-com.svg" alt="">
             </a>
         </div>
-    </div> -->
+    </div>
     <!-- <a class="position-fixed link-download btn line-btn d-flex flex-wrap align-items-center justify-content-center rounded-circle p-0" href="https://t.me/paiyed69">
         <img class="w-100 p-1" src="images/android-icon.png" alt="">Download
     </a> -->
-    <button class="position-fixed contact-btn rounded-circle">
+    <!-- <button class="position-fixed contact-btn rounded-circle">
         <svg class="contact-icon" width="50px" height="50px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g fill="none" fill-rule="evenodd" id="" stroke="none" stroke-width="1"> <g id="" transform="translate(-251.000000, -207.000000)"> <g id="" transform="translate(251.000000, 207.000000)"> <rect fill="#FFFFFF" fill-opacity="0.01" fill-rule="nonzero" height="24" id="" width="24" x="0" y="0"></rect> <path d="M18,16 C20.20915,16 22,14.20915 22,12 C22,9.79085 20.20915,8 18,8" id=""></path> <path d="M18,16 L18,16 C20.20915,16 22,14.20915 22,12 C22,9.79085 20.20915,8 18,8" id="" stroke="#212121" stroke-linejoin="round" stroke-width="1.5"></path> <path d="M6,8 C3.79086,8 2,9.79085 2,12 C2,14.20915 3.79086,16 6,16" id=""></path> <path d="M6,8 C3.79086,8 2,9.79085 2,12 C2,14.20915 3.79086,16 6,16 L6,16" id="" stroke="#212121" stroke-linejoin="round" stroke-width="1.5"></path> <path d="M6,16 L6,15.75 L6,14.5 L6,12 L6,8 C6,4.68629 8.6863,2 12,2 C15.3137,2 18,4.68629 18,8 L18,16 C18,19.3137 15.3137,22 12,22" id="" stroke="#212121" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path> </g> </g> </g> </g></svg>
         <svg class="close-icon d-none" width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0_429_11083)"> <path d="M7 7.00006L17 17.0001M7 17.0001L17 7.00006" stroke="#292929" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path> </g> <defs> <clipPath id="clip0_429_11083"> <rect width="24" height="24" fill="white"></rect> </clipPath> </defs> </g></svg>
     </button>
@@ -244,7 +257,7 @@
         <a class="link-circle btn line-btn d-flex align-items-center justify-content-center rounded-circle p-0" href="https://t.me/paiyed69">
             <img class="w-100 p-3" src="images/telegram-communication-chat-interaction-network-connection-svgrepo-com.svg" alt="">
         </a>
-    </div>
+    </div> -->
 
     <section class="change-page warp w-100">
         <img class="position-absolute logo" src="images/LOGO.png" alt="aoxx69">
@@ -445,11 +458,11 @@
             testSpeed();
         });
 
-        $('.contact-btn').click(function(){
-            $('.btn-wrap').toggleClass('show');
-            $('.contact-icon').toggleClass('d-none');
-            $('.close-icon').toggleClass('d-none');
-        })
+        // $('.contact-btn').click(function(){
+        //     $('.btn-wrap').toggleClass('show');
+        //     $('.contact-icon').toggleClass('d-none');
+        //     $('.close-icon').toggleClass('d-none');
+        // })
     </script>
 
 </body>

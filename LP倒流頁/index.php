@@ -31,6 +31,9 @@ switch ($_SERVER['HTTP_CF_IPCOUNTRY']) {
     <link rel="icon" href="images/apple_touch_icon-152x152.ico" type="image/x-icon">
     <link rel="shortcut icon" href="images/apple_touch_icon-152x152.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://dev.xav69.com/assets/511ade84/css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -39,6 +42,25 @@ switch ($_SERVER['HTTP_CF_IPCOUNTRY']) {
     })(window,document,'script','dataLayer','GTM-P68MGRZ');</script>
     <!-- End Google Tag Manager -->
     <style>
+        *{
+            /* padding: 0; */
+            margin: 0;
+            font-family: 'Itim', cursive;
+        }
+        h2{
+            font-size: calc(2.5rem + 2.5vw);
+            text-shadow: 1px 1px 0px #fff,1px 0px 0px #fff,1px -1px 0px #fff,0px -1px 0px #fff,-1px -1px 0px #fff,-1px 0px 0px #fff,-1px 1px 0px #fff,0px 1px 0px #fff,1px 1px 2px #ff5983,1px 0px 2px #ff5983,1px -1px 2px #ff5983,0px -1px 2px #ff5983,-1px -1px 2px #ff5983,-1px 0px 2px #ff5983,-1px 1px 2px #ff5983,0px 1px 2px #ff5983;
+        }
+        .fixed-box{
+            bottom: 10px;
+            right: 10px;
+            width: 60px;
+            z-index: 1;
+        }
+        .contact-box{
+            border-radius: 5px;
+            background: rgba(255,255,255,.5);
+        }
         .change-page.warp {
             background-color: #ff5983;
         }
@@ -64,6 +86,7 @@ switch ($_SERVER['HTTP_CF_IPCOUNTRY']) {
         .change-page .page-2 .color-bg{
             clip-path: polygon(0 30%, 74% 0, 100% 15%, 100% 100%, 0% 100%);
             background-color: #3a1b33;
+            background: linear-gradient(0deg, #ffffff 0%, rgba(255,255,255,0.55) 15% 85% , #ffffff 100%),url(images/f36624a369639398833c84565211fb15.jpg)no-repeat center/cover;
         }
         .change-page .page-1>div>div{
             width: 50%;
@@ -85,12 +108,12 @@ switch ($_SERVER['HTTP_CF_IPCOUNTRY']) {
             color: #fff;
         }
         .change-page .phone-img{width: 40%;}
-        .change-page .word-img{width: 60%;}
+        .change-page .word-img{width: 60%;background: #3a1b3380;border-radius: 10px;}
         .change-page .btn{
             position: relative;
             width: 50vw;
             height: 20vw;
-            max-width: 200px;
+            max-width: 320px;
             max-height: 60px;
             border-radius: 10px;
             box-shadow: 0 0 10px inset;
@@ -127,16 +150,16 @@ switch ($_SERVER['HTTP_CF_IPCOUNTRY']) {
             padding-right: 60px;
         }
         .page-3{
-            background: linear-gradient(180deg, #3a1b33 0%, rgba(255,255,255,.45) 15% 85% , #ffffff 100%),url(images/sexy-woman-listening-music.jpg)no-repeat left/cover fixed;
+            background: linear-gradient(180deg, #ffffff 0%, rgba(255,255,255,.45) 15% 85% , #ffffff 100%),url(images/sexy-woman-listening-music.jpg)no-repeat left/cover fixed;
         }
         .page-4{
-            background: linear-gradient(180deg, #ffffff 0%, rgba(255,255,255,.75) 15% 85%,#ff5983 100%),url(images/asian-beautiful-woman.jpg)no-repeat center/cover;
+            background: linear-gradient(180deg, #ffffff 0%, rgba(255,255,255,.75) 15% 85%,#ffffff 100%),url(images/Asian_Pose_Chairs_Sitting_Legs_Shorts_Singlet_613589_1280x853.jpg)no-repeat center/cover;
         }
         .page-5{
-            background: linear-gradient(180deg, #ff5983 0%, rgba(255,255,255,.45) 15% 100%),url(images/49213c9f6fcc60940f0e86b65efb9246_1280.webp)no-repeat center/cover fixed;
+            background: linear-gradient(180deg, #ffffff 0%, rgba(255,255,255,.45) 15% 100%),url(images/1-1910061102390-L.jpg)no-repeat center/cover fixed;
         }
         .msg-box{
-            background: rgba(255,255,255,.5);
+            background: rgb(255 89 131 / 25%);
             border-radius: 10px;
             font-size: 1.25rem;
         }
@@ -185,10 +208,74 @@ switch ($_SERVER['HTTP_CF_IPCOUNTRY']) {
             0%{transform: translateY(-5px);opacity: 0;}
             100%{transform: translateY(5px);opacity: 1;}
         }
+
+        .contact-btn{
+            bottom: -25px;
+            right: -25px;
+            width: 100px;
+            height: 100px;
+            background: #ff9fb7;
+            border-width: 10px;
+            border-color: rgb(255 255 255);
+            box-shadow: 0 0 10px #fff inset;
+            z-index: 3;
+        }
+        .btn-wrap{
+            bottom: -25px;
+            right: -25px;
+            width: 100px;
+            height: 100px;
+            background: rgb(58 27 51 / 75%);
+            z-index: 2;
+        }
+        .btn-wrap.show{
+            bottom: -100px;
+            right: -100px;
+            width: 300px;
+            height: 300px;
+            transition: all .4s ease;
+        }
+        .link-download{
+            bottom: 8px;
+            left: 8px;
+            width: 80px;
+            height: 80px;
+            background: rgba(255,255,255,1);
+            z-index: 2;
+        }
+        .link-circle{
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background: rgba(255,255,255,1);
+        }
+        .link-circle:nth-child(1){
+            top: 8%;
+            left: 35%;
+        }
+        .link-circle:nth-child(2){
+            top: 35%;
+            left: 8%;
+        }
     </style>
 </head>
 <body>
-<section class="change-page warp w-100">
+    <div class="position-fixed fixed-box">
+        <div class="apk-box mb-3 p-0">
+            <a class="link-1 btn btn-light download-btn d-flex align-items-center justify-content-center border-0 rounded-circle p-2" href="/H52C33BD0_0510064628.apk">
+                <img class="w-100" src="images/android-icon.png" alt="">
+            </a>
+        </div>
+        <div class="contact-box p-2">
+            <a class="link-2 btn btn-light line-btn d-flex align-items-center justify-content-center border-0 mb-2 p-0" href="https://lin.ee/PEQGiMN">
+                <img class="w-100 p-2" src="images/Line@-icon.png" alt="">
+            </a>
+            <a class="link-2 btn btn-light line-btn d-flex align-items-center justify-content-center border-0 p-0" href="https://t.me/paiyed69">
+                <img class="w-100 p-2" src="images/telegram-communication-chat-interaction-network-connection-svgrepo-com.svg" alt="">
+            </a>
+        </div>
+    </div>
+    <section class="change-page warp w-100">
         <img class="position-absolute logo" src="images/LOGO.png" alt="aoxx69">
         <div class="position-relative page page-1 row align-items-center justify-content-center w-100 m-0">
             <div class="position-absolute color-bg w-100 h-100"></div>
@@ -199,12 +286,12 @@ switch ($_SERVER['HTTP_CF_IPCOUNTRY']) {
                         <a class="link-1 btn btn-light download-btn d-flex align-items-center justify-content-center border-0 mx-3 mb-3 p-0" href="/H52C33BD0_0510064628.apk">
                             <img class="border-right" src="images/android-icon.png" alt=""><div class="font-weight-bold download-btn-wd">APK Download</div>
                         </a>
-                        <a class="link-2 btn btn-light line-btn d-flex align-items-center justify-content-center border-0 mx-3 mb-3 p-0" href="https://lin.ee/PEQGiMN">
+                        <!-- <a class="link-2 btn btn-light line-btn d-flex align-items-center justify-content-center border-0 mx-3 mb-3 p-0" href="https://lin.ee/PEQGiMN">
                             <img class="border-right" src="images/Line@-icon.png" alt=""><div class="font-weight-bold line-btn-wd"><?= $data[$co]['line-btn-wd'] ?></div>
                         </a>
                         <a class="link-2 btn btn-light line-btn d-flex align-items-center justify-content-center border-0 mx-3 mb-3 p-0" href="https://t.me/paiyed69">
                             <img class="border-right" src="images/telegram-communication-chat-interaction-network-connection-svgrepo-com.svg" alt=""><div class="font-weight-bold line-btn-wd">Telegram</div>
-                        </a>
+                        </a> -->
                         <a name="link" class="link-3 btn btn-light link-btn d-flex align-items-center justify-content-center border-0 mx-3 mb-3 p-0" data-href="aHR0cHM6Ly93d3cuYW94eDY5LnZpcC8/dXRtX3NvdXJjZT1wZXJtYWxpbmtscCZ1dG1fbWVkaXVtPWxhcHUmdXRtX2NhbXBhaWduPXBlcm1hbGlua2xwJnV0bV9pZD1sYXB1">
                             <img class="border-right" src="images/link-icon.png" alt="">
                             <div class="font-weight-bold link-btn-wd"><?= $data[$co]['link-btn-wd'] ?>1</div>
@@ -248,17 +335,17 @@ switch ($_SERVER['HTTP_CF_IPCOUNTRY']) {
             <div class="row justify-content-around w-100">
                 <div class="col-12 col-md-5 p-2"></div>
                 <div class="col-12 col-md-5 p-2">
-                    <h2 class="text-center mb-4">หน้าหนังโป๊</h2>
+                    <h2 class="text-center mb-4"><?= $data[$co]['long-video-title'] ?></h2>
                     <div class="msg-box p-3 mb-4">
-                        ทางเว็บไซต์มีหนัง JAV ใหม่อัปเดตตลอด หนัง JAV ออนไลน์จำนวนมากกว่า 30,000 เรื่อง สาวเอวีมีการจัดแบ่งไว้เกือบทุกประเภท คนไทย ไม่ควรพลาดหนังซับไทย คุณสามารถเข้าใจเนื้อเรื่องพร้อมรับชมหนังภาพคมชัด
+                        <?= $data[$co]['long-video-main'] ?>
                     </div>
                     <div class="msg-box p-2">
                         <ul>
-                            <li>แหล่งรวมหนัง JAV ที่ครบครัน</li>
-                            <li>ข้อมูลสาวเอวี</li>
-                            <li>หนังใหม่ส่งตรงจากญี่ปุ่น</li>
-                            <li>หนังเอวีซับไทย</li>
-                            <li>รับชมฟรีไม่เสียค่าใช้จ่าย</li>
+                            <li><?= $data[$co]['long-video-advantage-1'] ?></li>
+                            <li><?= $data[$co]['long-video-advantage-2'] ?></li>
+                            <li><?= $data[$co]['long-video-advantage-3'] ?></li>
+                            <li><?= $data[$co]['long-video-advantage-4'] ?></li>
+                            <li><?= $data[$co]['long-video-advantage-5'] ?></li>
                         </ul>
                     </div>
                 </div>
@@ -267,15 +354,15 @@ switch ($_SERVER['HTTP_CF_IPCOUNTRY']) {
         <div class="position-relative page page-4 row align-items-center justify-content-center w-100 m-0">
             <div class="row justify-content-around w-100">
                 <div class="col-12 col-md-5 p-2 d-flex flex-column justify-content-center">
-                    <h2 class="text-center mb-4 w-100">หน้าคลิปโป๊</h2>
+                    <h2 class="text-center mb-4 w-100"><?= $data[$co]['short-video-title'] ?></h2>
                     <div class="msg-box p-3 mb-4 w-100">
-                        อยากรู้คลิปโป๊ที่เพื่อนคุยกันนั้นมาจากที่ไหน? คุณสามารถมาเสิร์ชได้บนช่องค้นหาใน AOXX ระบบข้อมูลครบวงจรที่ทำให้คุณค้นหาหนังที่ต้องการได้ง่ายยิ่งขึ้น ระวัง เดี๋ยวติดใจ！
+                        <?= $data[$co]['short-video-main'] ?>
                     </div>
                     <div class="msg-box p-2 w-100">
                         <ul>
-                            <li>หนังใหม่ล่าสุดบนอินเตอร์เน็ตโหลดด้วยระบบ AI</li>
-                            <li>วิดีโอหนังหลากหลายประเภท</li>
-                            <li>รวบรวมหนังยอดฮิตจากต่างประเทศ</li>
+                            <li><?= $data[$co]['long-video-advantage-1'] ?></li>
+                            <li><?= $data[$co]['long-video-advantage-2'] ?></li>
+                            <li><?= $data[$co]['long-video-advantage-3'] ?></li>
                         </ul>
                     </div>
                 </div>
@@ -287,9 +374,9 @@ switch ($_SERVER['HTTP_CF_IPCOUNTRY']) {
         <div class="position-relative page page-5 row align-items-center justify-content-center w-100 m-0">
             <div class="row justify-content-around w-100">
                 <div class="col-12 col-md-8 p-2 d-flex flex-column justify-content-center">
-                    <h2 class="text-center mb-4 w-100">หน้าสาวเอวี</h2>
+                    <h2 class="text-center mb-4 w-100"><?= $data[$co]['av-page-title'] ?></h2>
                     <div class="msg-box p-3 mb-4 w-100">
-                        สาวเอวีที่กำลังมาแรงอย่าง Kawakita Saika, Koyoi Konan, Yamate Ria, Rei Kamiki และSuzumori Remu หรือสาวเอวีที่เพิ่งเดบิวต์มาใหม่ ที่นี่มีผลงานและคลังข้อมูลของสาวเอวีที่ครบครัน อยากดูหนังสาวเอวีคนโปรดแต่หาไม่เจอ? รีบมาค้นหาบน AOXX ได้เลยตอนนี้！
+                        <?= $data[$co]['av-page-mian'] ?>
                     </div>
                 </div>
             </div>
