@@ -55,17 +55,20 @@ switch ($_SERVER['HTTP_CF_IPCOUNTRY']) {
         .fixed-box{
             bottom: 10px;
             right: 10px;
-            width: 60px;
+            width: 120px;
             z-index: 2;
         }
         .contact-box{
             border-radius: 5px;
             background: rgba(255,255,255,.5);
         }
+        .contact-box a{
+            background-color: #ffffff;
+        }
         .change-page.warp {
             background-color: #ff5983;
         }
-        .change-page .logo{
+        .change-page .logo{ 
             top: 8px;
             left: 8px;
             width: 240px;
@@ -151,13 +154,13 @@ switch ($_SERVER['HTTP_CF_IPCOUNTRY']) {
             padding-right: 60px;
         }
         .page-3{
-            background: linear-gradient(180deg, #ffffff 0%, rgba(255,255,255,.45) 15% 85% , #ffffff 100%),url(images/sexy-woman-listening-music.jpg)no-repeat left/cover fixed;
+            background: linear-gradient(180deg, #ffffff 0%, rgba(255,255,255,.45) 15% 85% , #ffffff 100%),url(images/sexy-woman-listening-music.jpg)no-repeat left/cover;
         }
         .page-4{
             background: linear-gradient(180deg, #ffffff 0%, rgba(255,255,255,.75) 15% 85%,#ffffff 100%),url(images/Asian_Pose_Chairs_Sitting_Legs_Shorts_Singlet_613589_1280x853.jpg)no-repeat center/cover;
         }
         .page-5{
-            background: linear-gradient(180deg, #ffffff 0%, rgba(255,255,255,.45) 15% 100%),url(images/1-1910061102390-L.jpg)no-repeat center/cover fixed;
+            background: linear-gradient(180deg, #ffffff 0%, rgba(255,255,255,.45) 15% 100%),url(images/Asian_Smile_Pose_Legs_Shorts_Singlet_614630_1280x854.jpg)no-repeat center/cover;
         }
         .msg-box{
             background: rgb(255 89 131 / 25%);
@@ -170,6 +173,22 @@ switch ($_SERVER['HTTP_CF_IPCOUNTRY']) {
         }
 
         @media (max-width: 766px){
+            .fixed-box{
+                bottom: 0;
+                right: 0;
+                width: 100%;
+            }
+            .contact-box{
+                border-radius: 0px;
+                padding: 0 !important;
+            }
+            .contact-box a{
+                margin: 0 !important;
+                border-radius: 0;
+            }
+            .contact-box img{
+                width: 48px !important;
+            }
             .change-page .page>div>div{
                 width: 75%;
                 min-width: unset;
@@ -182,6 +201,9 @@ switch ($_SERVER['HTTP_CF_IPCOUNTRY']) {
             }
             .img-box{
                 order: -1;
+            }
+            .img-box-1{
+                order: 1;
             }
         }
 
@@ -209,55 +231,6 @@ switch ($_SERVER['HTTP_CF_IPCOUNTRY']) {
             0%{transform: translateY(-5px);opacity: 0;}
             100%{transform: translateY(5px);opacity: 1;}
         }
-
-        .contact-btn{
-            bottom: -25px;
-            right: -25px;
-            width: 100px;
-            height: 100px;
-            background: #ff9fb7;
-            border-width: 10px;
-            border-color: rgb(255 255 255);
-            box-shadow: 0 0 10px #fff inset;
-            z-index: 3;
-        }
-        .btn-wrap{
-            bottom: -25px;
-            right: -25px;
-            width: 100px;
-            height: 100px;
-            background: rgb(58 27 51 / 75%);
-            z-index: 2;
-        }
-        .btn-wrap.show{
-            bottom: -100px;
-            right: -100px;
-            width: 300px;
-            height: 300px;
-            transition: all .4s ease;
-        }
-        .link-download{
-            bottom: 8px;
-            left: 8px;
-            width: 80px;
-            height: 80px;
-            background: rgba(255,255,255,1);
-            z-index: 2;
-        }
-        .link-circle{
-            position: absolute;
-            width: 80px;
-            height: 80px;
-            background: rgba(255,255,255,1);
-        }
-        .link-circle:nth-child(1){
-            top: 8%;
-            left: 35%;
-        }
-        .link-circle:nth-child(2){
-            top: 35%;
-            left: 8%;
-        }
     </style>
 </head>
 <body>
@@ -267,12 +240,14 @@ switch ($_SERVER['HTTP_CF_IPCOUNTRY']) {
                 <img class="w-100" src="images/android-icon.png" alt="">
             </a>
         </div> -->
-        <div class="contact-box p-2">
-            <a class="link-2 btn btn-light line-btn d-flex align-items-center justify-content-center border-0 mb-2 p-0" href="https://lin.ee/PEQGiMN">
-                <img class="w-100 p-2" src="images/Line@-icon.png" alt="">
+        <div class="contact-box d-flex flex-wrap p-2">
+            <a class="col-6 col-md-12 link-2 btn line-btn d-flex flex-wrap align-items-center justify-content-center border-0 mb-2 p-0" href="https://t.me/paiyed69">
+                <img class="w-75 p-2" src="images/telegram-communication-chat-interaction-network-connection-svgrepo-com.svg" alt="">
+                <div class="w-100"><?= $data[$co]['tg-btn-wd'] ?></div> 
             </a>
-            <a class="link-2 btn btn-light line-btn d-flex align-items-center justify-content-center border-0 p-0" href="https://t.me/paiyed69">
-                <img class="w-100 p-2" src="images/telegram-communication-chat-interaction-network-connection-svgrepo-com.svg" alt="">
+            <a class="col-6 col-md-12 link-2 btn line-btn d-flex flex-wrap align-items-center justify-content-center border-0 p-0" href="https://lin.ee/PEQGiMN">
+                <img class="w-75 p-2" src="images/Line@-icon.png" alt="">
+                <div class="w-100"><?= $data[$co]['line-btn-wd'] ?></div> 
             </a>
         </div>
     </div>
@@ -380,6 +355,7 @@ switch ($_SERVER['HTTP_CF_IPCOUNTRY']) {
                         <?= $data[$co]['av-page-mian'] ?>
                     </div>
                 </div>
+                <div class="img-box img-box-1 position-relative col-12 col-md-5"></div>
             </div>
         </div>
     </section>

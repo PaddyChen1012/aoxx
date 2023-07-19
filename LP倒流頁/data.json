@@ -2,6 +2,7 @@
     "th" : {
         
             "img-1" : "images/AD0315-1_1040x1040_nobg.png",
+            "tg-btn-wd" : "กลุ่มพูดคุย",
             "line-btn-wd" : "ฝ่ายบริการลูกค้า",
             "link-btn-wd" : "ลิงก์สำรอง",
             "img-2" : "images/text_thai.png",
@@ -26,6 +27,7 @@
     "en" : {
         
             "img-1" : "images/AD0315-1_1040x1040_en.png",
+            "tg-btn-wd" : "group talk",
             "line-btn-wd" : "contact us",
             "link-btn-wd" : "line",
             "img-2" : "images/text_en.png",
