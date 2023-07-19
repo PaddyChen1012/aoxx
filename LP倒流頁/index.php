@@ -56,7 +56,7 @@ switch ($_SERVER['HTTP_CF_IPCOUNTRY']) {
             bottom: 10px;
             right: 10px;
             width: 60px;
-            z-index: 1;
+            z-index: 2;
         }
         .contact-box{
             border-radius: 5px;
@@ -262,11 +262,11 @@ switch ($_SERVER['HTTP_CF_IPCOUNTRY']) {
 </head>
 <body>
     <div class="position-fixed fixed-box">
-        <div class="apk-box mb-3 p-0">
+        <!-- <div class="apk-box mb-3 p-0">
             <a class="link-1 btn btn-light download-btn d-flex align-items-center justify-content-center border-0 rounded-circle p-2" href="/H52C33BD0_0510064628.apk">
                 <img class="w-100" src="images/android-icon.png" alt="">
             </a>
-        </div>
+        </div> -->
         <div class="contact-box p-2">
             <a class="link-2 btn btn-light line-btn d-flex align-items-center justify-content-center border-0 mb-2 p-0" href="https://lin.ee/PEQGiMN">
                 <img class="w-100 p-2" src="images/Line@-icon.png" alt="">

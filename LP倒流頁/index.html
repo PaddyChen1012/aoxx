@@ -23,12 +23,15 @@
         .fixed-box{
             bottom: 10px;
             right: 10px;
-            width: 60px;
-            z-index: 1;
+            width: 120px;
+            z-index: 2;
         }
         .contact-box{
             border-radius: 5px;
             background: rgba(255,255,255,.5);
+        }
+        .contact-box a{
+            background-color: #ffffff;
         }
         .change-page.warp {
             background-color: #ff5983;
@@ -119,13 +122,13 @@
             padding-right: 60px;
         }
         .page-3{
-            background: linear-gradient(180deg, #ffffff 0%, rgba(255,255,255,.45) 15% 85% , #ffffff 100%),url(images/sexy-woman-listening-music.jpg)no-repeat left/cover fixed;
+            background: linear-gradient(180deg, #ffffff 0%, rgba(255,255,255,.45) 15% 85% , #ffffff 100%),url(images/sexy-woman-listening-music.jpg)no-repeat left/cover;
         }
         .page-4{
             background: linear-gradient(180deg, #ffffff 0%, rgba(255,255,255,.75) 15% 85%,#ffffff 100%),url(images/Asian_Pose_Chairs_Sitting_Legs_Shorts_Singlet_613589_1280x853.jpg)no-repeat center/cover;
         }
         .page-5{
-            background: linear-gradient(180deg, #ffffff 0%, rgba(255,255,255,.45) 15% 100%),url(images/1-1910061102390-L.jpg)no-repeat center/cover fixed;
+            background: linear-gradient(180deg, #ffffff 0%, rgba(255,255,255,.45) 15% 100%),url(images/Asian_Smile_Pose_Legs_Shorts_Singlet_614630_1280x854.jpg)no-repeat center/cover;
         }
         .msg-box{
             background: rgb(255 89 131 / 25%);
@@ -138,6 +141,22 @@
         }
 
         @media (max-width: 766px){
+            .fixed-box{
+                bottom: 0;
+                right: 0;
+                width: 100%;
+            }
+            .contact-box{
+                border-radius: 0px;
+                padding: 0 !important;
+            }
+            .contact-box a{
+                margin: 0 !important;
+                border-radius: 0;
+            }
+            .contact-box img{
+                width: 48px !important;
+            }
             .change-page .page>div>div{
                 width: 75%;
                 min-width: unset;
@@ -150,6 +169,9 @@
             }
             .img-box{
                 order: -1;
+            }
+            .img-box-1{
+                order: 1;
             }
         }
 
@@ -178,7 +200,7 @@
             100%{transform: translateY(5px);opacity: 1;}
         }
 
-        .contact-btn{
+        /* .contact-btn{
             bottom: -25px;
             right: -25px;
             width: 100px;
@@ -225,22 +247,24 @@
         .link-circle:nth-child(2){
             top: 35%;
             left: 8%;
-        }
+        } */
     </style>
 </head>
 <body>
     <div class="position-fixed fixed-box">
-        <div class="apk-box mb-3 p-0">
-            <a class="link-1 btn btn-light download-btn d-flex align-items-center justify-content-center border-0 rounded-circle p-2" href="/H52C33BD0_0510064628.apk">
+        <!-- <div class="apk-box mb-3 p-0">
+            <a class="link-1 btn download-btn d-flex align-items-center justify-content-center border-0 rounded-circle p-2" href="/H52C33BD0_0510064628.apk">
                 <img class="w-100" src="images/android-icon.png" alt="">
             </a>
-        </div>
-        <div class="contact-box p-2">
-            <a class="link-2 btn btn-light line-btn d-flex align-items-center justify-content-center border-0 mb-2 p-0" href="https://lin.ee/PEQGiMN">
-                <img class="w-100 p-2" src="images/Line@-icon.png" alt="">
+        </div> -->
+        <div class="contact-box d-flex flex-wrap p-2">
+            <a class="col-6 col-md-12 link-2 btn line-btn d-flex flex-wrap align-items-center justify-content-center border-0 mb-2 p-0" href="https://t.me/paiyed69">
+                <img class="w-75 p-2" src="images/telegram-communication-chat-interaction-network-connection-svgrepo-com.svg" alt="">
+                <div class="w-100">官方交流群</div> 
             </a>
-            <a class="link-2 btn btn-light line-btn d-flex align-items-center justify-content-center border-0 p-0" href="https://t.me/paiyed69">
-                <img class="w-100 p-2" src="images/telegram-communication-chat-interaction-network-connection-svgrepo-com.svg" alt="">
+            <a class="col-6 col-md-12 link-2 btn line-btn d-flex flex-wrap align-items-center justify-content-center border-0 p-0" href="https://lin.ee/PEQGiMN">
+                <img class="w-75 p-2" src="images/Line@-icon.png" alt="">
+                <div class="w-100">客服</div> 
             </a>
         </div>
     </div>
@@ -268,13 +292,13 @@
                 <div class="d-flex justify-content-center flex-wrap">
                     <img class="warp-img mb-4" src="images/AD0315-1_1040x1040_nobg.png" alt="aoxx69">
                     <div class="d-flex flex-column flex-sm-row justify-content-around flex-wrap btn-box">
-                        <a class="link-1 btn btn-light download-btn d-flex align-items-center justify-content-center border-0 mx-3 mb-3 p-0" href="/H52C33BD0_0510064628.apk">
+                        <a class="link-1 btn download-btn btn-light d-flex align-items-center justify-content-center border-0 mx-3 mb-3 p-0" href="/H52C33BD0_0510064628.apk">
                             <img class="border-right" src="images/android-icon.png" alt=""><div class="font-weight-bold download-btn-wd">APK Download</div>
                         </a>
-                        <!-- <a class="link-2 btn btn-light line-btn d-flex align-items-center justify-content-center border-0 mx-3 mb-3 p-0" href="https://lin.ee/PEQGiMN">
+                        <!-- <a class="link-2 btn line-btn d-flex align-items-center justify-content-center border-0 mx-3 mb-3 p-0" href="https://lin.ee/PEQGiMN">
                             <img class="border-right" src="images/Line@-icon.png" alt=""><div class="font-weight-bold line-btn-wd">line@</div>
                         </a>
-                        <a class="link-2 btn btn-light line-btn d-flex align-items-center justify-content-center border-0 mx-3 mb-3 p-0" href="https://t.me/paiyed69">
+                        <a class="link-2 btn line-btn d-flex align-items-center justify-content-center border-0 mx-3 mb-3 p-0" href="https://t.me/paiyed69">
                             <img class="border-right" src="images/telegram-communication-chat-interaction-network-connection-svgrepo-com.svg" alt=""><div class="font-weight-bold line-btn-wd">Telegram</div>
                         </a> -->
                         <a name="link" class="link-3 btn btn-light link-btn d-flex align-items-center justify-content-center border-0 mx-3 mb-3 p-0" data-href="aHR0cHM6Ly93d3cuYW94eDY5LnZpcC8/dXRtX3NvdXJjZT1wZXJtYWxpbmtscCZ1dG1fbWVkaXVtPWxhcHUmdXRtX2NhbXBhaWduPXBlcm1hbGlua2xwJnV0bV9pZD1sYXB1">
@@ -358,12 +382,13 @@
         </div>
         <div class="position-relative page page-5 row align-items-center justify-content-center w-100 m-0">
             <div class="row justify-content-around w-100">
-                <div class="col-11 col-md-8 p-2 d-flex flex-column justify-content-center mt-5">
+                <div class="col-11 col-md-5 p-2 d-flex flex-column justify-content-center">
                     <h2 class="text-center mb-4 w-100">หน้าสาวเอวี</h2>
                     <div class="msg-box p-3 mb-4 w-100">
                         สาวเอวีที่กำลังมาแรงอย่าง Kawakita Saika, Koyoi Konan, Yamate Ria, Rei Kamiki และSuzumori Remu หรือสาวเอวีที่เพิ่งเดบิวต์มาใหม่ ที่นี่มีผลงานและคลังข้อมูลของสาวเอวีที่ครบครัน อยากดูหนังสาวเอวีคนโปรดแต่หาไม่เจอ? รีบมาค้นหาบน AOXX ได้เลยตอนนี้！
                     </div>
                 </div>
+                <div class="img-box img-box-1 position-relative col-12 col-md-5"></div>
             </div>
         </div>
     </section>
