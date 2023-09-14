@@ -26,8 +26,10 @@ switch ($_SERVER['HTTP_CF_IPCOUNTRY']) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="">
-    <title>ทางเข้า AOXX69</title>
-    <meta name="description" content="ทางเข้า AOXX69">
+    <meta name="description" content="เลือกช่องทางเข้าเว็บที่ไวที่สุด รับชมวิดีโอหนังคุณภาพสูง เข้าดูหนัง AV ออนไลน์ฟรีเลยตอนนี้">
+    <meta property="og:title" content="ทางเข้าเว็บ AOXX69">
+    <meta property="og:description" content="เลือกช่องทางเข้าเว็บที่ไวที่สุด รับชมวิดีโอหนังคุณภาพสูง เข้าดูหนัง AV ออนไลน์ฟรีเลยตอนนี้">
+    <title>ทางเข้าเว็บ AOXX69</title>
     <link rel="icon" href="images/apple_touch_icon-152x152.ico" type="image/x-icon">
     <link rel="shortcut icon" href="images/apple_touch_icon-152x152.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://dev.xav69.com/assets/511ade84/css/bootstrap.css">
@@ -41,13 +43,22 @@ switch ($_SERVER['HTTP_CF_IPCOUNTRY']) {
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-P68MGRZ');</script>
     <!-- End Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FYW7PQTWV"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7FYW7PQTWV');
+    </script>
     <style>
         *{
             /* padding: 0; */
             margin: 0;
             font-family: 'Itim', cursive;
         }
-        h2{
+        h1,h2{
             font-size: calc(2.5rem + 2.5vw);
             font-weight: bolder;
             text-shadow: 1px 1px 0px #fff,1px 0px 0px #fff,1px -1px 0px #fff,0px -1px 0px #fff,-1px -1px 0px #fff,-1px 0px 0px #fff,-1px 1px 0px #fff,0px 1px 0px #fff,1px 1px 2px #ff5983,1px 0px 2px #ff5983,1px -1px 2px #ff5983,0px -1px 2px #ff5983,-1px -1px 2px #ff5983,-1px 0px 2px #ff5983,-1px 1px 2px #ff5983,0px 1px 2px #ff5983;
@@ -189,6 +200,8 @@ switch ($_SERVER['HTTP_CF_IPCOUNTRY']) {
             .contact-box img{
                 width: 48px !important;
             }
+            .change-page .page-2 .color-bg{background-position-x: 75%;}
+            .page-5{background-position-x: 85%;}
             .change-page .page>div>div{
                 width: 75%;
                 min-width: unset;
@@ -204,6 +217,10 @@ switch ($_SERVER['HTTP_CF_IPCOUNTRY']) {
             }
             .img-box-1{
                 order: 1;
+            }
+            .page-4 .col-11{
+                margin-top: -40%;
+                z-index: 1;
             }
         }
 
@@ -235,17 +252,16 @@ switch ($_SERVER['HTTP_CF_IPCOUNTRY']) {
 </head>
 <body>
     <div class="position-fixed fixed-box">
-        <!-- <div class="apk-box mb-3 p-0">
-            <a class="link-1 btn btn-light download-btn d-flex align-items-center justify-content-center border-0 rounded-circle p-2" href="/H52C33BD0_0510064628.apk">
-                <img class="w-100" src="images/android-icon.png" alt="">
-            </a>
-        </div> -->
         <div class="contact-box d-flex flex-wrap p-2">
-            <a class="col-6 col-md-12 link-2 btn line-btn d-flex flex-wrap align-items-center justify-content-center border-0 mb-2 p-0" href="https://t.me/paiyed69">
+            <a class="col-4 col-md-12 link-2 btn line-btn d-flex flex-wrap align-items-center justify-content-center border-0 mb-2 p-0" href="<?= $data[$co]['tk-btn-url'] ?>" target="_blank">
+                <img class="w-75 p-2" src="images/TaiKip Logo_100x100.webp" alt="">
+                <div class="w-100"><?= $data[$co]['tk-btn-wd'] ?></div>
+            </a>
+            <a class="col-6 col-md-12 link-2 btn line-btn d-flex flex-wrap align-items-center justify-content-center border-0 mb-2 p-0" href="https://t.me/paiyed69" target="_blank">
                 <img class="w-75 p-2" src="images/telegram-communication-chat-interaction-network-connection-svgrepo-com.svg" alt="">
                 <div class="w-100"><?= $data[$co]['tg-btn-wd'] ?></div> 
             </a>
-            <a class="col-6 col-md-12 link-2 btn line-btn d-flex flex-wrap align-items-center justify-content-center border-0 p-0" href="https://lin.ee/PEQGiMN">
+            <a class="col-6 col-md-12 link-2 btn line-btn d-flex flex-wrap align-items-center justify-content-center border-0 p-0" href="https://lin.ee/PEQGiMN" target="_blank">
                 <img class="w-75 p-2" src="images/Line@-icon.png" alt="">
                 <div class="w-100"><?= $data[$co]['line-btn-wd'] ?></div> 
             </a>
@@ -257,7 +273,7 @@ switch ($_SERVER['HTTP_CF_IPCOUNTRY']) {
             <div class="position-absolute color-bg w-100 h-100"></div>
             <div class="d-flex align-items-center justify-content-center w-100" style="z-index: 1;">
                 <div class="d-flex justify-content-center flex-wrap">
-                    <img class="warp-img mb-4" src="images/AD0315-1_1040x1040_nobg.png" alt="aoxx69">
+                    <img class="warp-img mb-4" src="<?= $data[$co]['img-1'] ?>" alt="aoxx69">
                     <div class="d-flex flex-column flex-sm-row justify-content-around flex-wrap btn-box">
                         <a class="link-1 btn btn-light download-btn d-flex align-items-center justify-content-center border-0 mx-3 mb-3 p-0" href="/H52C33BD0_0510064628.apk">
                             <img class="border-right" src="images/android-icon.png" alt=""><div class="font-weight-bold download-btn-wd">APK Download</div>
@@ -303,15 +319,16 @@ switch ($_SERVER['HTTP_CF_IPCOUNTRY']) {
             <div class="d-flex align-items-center justify-content-center w-100 h-100" style="z-index: 1;">
                 <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center">
                     <img class="phone-img mw-100" src="images/phone.png" alt="aoxx69">
-                    <img class="word-img mw-100" src="images/text_thai.png" alt="aoxx69">
+                    <img class="word-img mw-100" src="<?= $data[$co]['img-2'] ?>" alt="aoxx69">
                 </div>
             </div>
         </div>
+        <?php if([$co] == 'th') { ?>
         <div class="position-relative page page-3 row align-items-center justify-content-center w-100 m-0">
             <div class="row justify-content-around w-100">
                 <div class="col-12 col-md-5 p-2"></div>
-                <div class="col-12 col-md-5 p-2">
-                    <h2 class="text-center mb-4"><?= $data[$co]['long-video-title'] ?></h2>
+                <div class="col-11 col-md-5 p-2">
+                    <h1 class="text-center mb-4"><?= $data[$co]['long-video-title'] ?></h1>
                     <div class="msg-box p-3 mb-4">
                         <?= $data[$co]['long-video-main'] ?>
                     </div>
@@ -329,7 +346,7 @@ switch ($_SERVER['HTTP_CF_IPCOUNTRY']) {
         </div>
         <div class="position-relative page page-4 row align-items-center justify-content-center w-100 m-0">
             <div class="row justify-content-around w-100">
-                <div class="col-12 col-md-5 p-2 d-flex flex-column justify-content-center">
+                <div class="col-11 col-md-5 p-2 d-flex flex-column justify-content-center">
                     <h2 class="text-center mb-4 w-100"><?= $data[$co]['short-video-title'] ?></h2>
                     <div class="msg-box p-3 mb-4 w-100">
                         <?= $data[$co]['short-video-main'] ?>
@@ -349,16 +366,19 @@ switch ($_SERVER['HTTP_CF_IPCOUNTRY']) {
         </div>
         <div class="position-relative page page-5 row align-items-center justify-content-center w-100 m-0">
             <div class="row justify-content-around w-100">
-                <div class="col-12 col-md-8 p-2 d-flex flex-column justify-content-center">
+                <div class="col-11 col-md-8 p-2 d-flex flex-column justify-content-center">
                     <h2 class="text-center mb-4 w-100"><?= $data[$co]['av-page-title'] ?></h2>
                     <div class="msg-box p-3 mb-4 w-100">
-                        <?= $data[$co]['av-page-mian'] ?>
+                        <?= $data[$co]['av-page-main'] ?>
                     </div>
                 </div>
                 <div class="img-box img-box-1 position-relative col-12 col-md-5"></div>
             </div>
         </div>
+        <?php } ?>
     </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P68MGRZ"
