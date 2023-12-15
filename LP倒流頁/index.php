@@ -52,7 +52,7 @@ switch ($_SERVER['HTTP_CF_IPCOUNTRY']) {
 
     gtag('config', 'G-7FYW7PQTWV');
     </script>
-    <style>
+<style>
         *{
             /* padding: 0; */
             margin: 0;
@@ -192,6 +192,7 @@ switch ($_SERVER['HTTP_CF_IPCOUNTRY']) {
             .contact-box{
                 border-radius: 0px;
                 padding: 0 !important;
+                box-shadow: 0 0 10px #ccc;
             }
             .contact-box a{
                 margin: 0 !important;
@@ -225,6 +226,9 @@ switch ($_SERVER['HTTP_CF_IPCOUNTRY']) {
         }
 
         @media (max-width: 575px){
+            .contact-box a:nth-child(1), .contact-box a:nth-child(2) {
+                border-right: 1px solid #0000002e !important;
+            }
             .change-page .logo{
                 left: calc(50% - 120px);
             }
@@ -257,11 +261,11 @@ switch ($_SERVER['HTTP_CF_IPCOUNTRY']) {
                 <img class="w-75 p-2" src="images/TaiKip Logo_100x100.webp" alt="">
                 <div class="w-100"><?= $data[$co]['tk-btn-wd'] ?></div>
             </a>
-            <a class="col-6 col-md-12 link-2 btn line-btn d-flex flex-wrap align-items-center justify-content-center border-0 mb-2 p-0" href="https://t.me/paiyed69" target="_blank">
+            <a class="col-4 col-md-12 link-2 btn line-btn d-flex flex-wrap align-items-center justify-content-center border-0 mb-2 p-0" href="https://t.me/paiyed69" target="_blank">
                 <img class="w-75 p-2" src="images/telegram-communication-chat-interaction-network-connection-svgrepo-com.svg" alt="">
                 <div class="w-100"><?= $data[$co]['tg-btn-wd'] ?></div> 
             </a>
-            <a class="col-6 col-md-12 link-2 btn line-btn d-flex flex-wrap align-items-center justify-content-center border-0 p-0" href="https://lin.ee/PEQGiMN" target="_blank">
+            <a class="col-4 col-md-12 link-2 btn line-btn d-flex flex-wrap align-items-center justify-content-center border-0 p-0" href="https://lin.ee/PEQGiMN" target="_blank">
                 <img class="w-75 p-2" src="images/Line@-icon.png" alt="">
                 <div class="w-100"><?= $data[$co]['line-btn-wd'] ?></div> 
             </a>
@@ -275,9 +279,9 @@ switch ($_SERVER['HTTP_CF_IPCOUNTRY']) {
                 <div class="d-flex justify-content-center flex-wrap">
                     <img class="warp-img mb-4" src="<?= $data[$co]['img-1'] ?>" alt="aoxx69">
                     <div class="d-flex flex-column flex-sm-row justify-content-around flex-wrap btn-box">
-                        <a class="link-1 btn btn-light download-btn d-flex align-items-center justify-content-center border-0 mx-3 mb-3 p-0" href="/H52C33BD0_0510064628.apk">
+                        <!-- <a class="link-1 btn btn-light download-btn d-flex align-items-center justify-content-center border-0 mx-3 mb-3 p-0" href="/H52C33BD0_0510064628.apk">
                             <img class="border-right" src="images/android-icon.png" alt=""><div class="font-weight-bold download-btn-wd">APK Download</div>
-                        </a>
+                        </a> -->
                         <!-- <a class="link-2 btn btn-light line-btn d-flex align-items-center justify-content-center border-0 mx-3 mb-3 p-0" href="https://lin.ee/PEQGiMN">
                             <img class="border-right" src="images/Line@-icon.png" alt=""><div class="font-weight-bold line-btn-wd"><?= $data[$co]['line-btn-wd'] ?></div>
                         </a>
